@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ankit Kushwaha | Endpoint Engineering Mind Map</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+#mindmap{width:100vw;height:100vh;display:block}
+.header{position:fixed;z-index:5;top:16px;left:20px;pointer-events:none}
+.header h1{margin:0;font-size:20px}.header p{margin:3px 0 0;font-size:12px;opacity:.7}
+.legend{position:fixed;z-index:5;bottom:16px;left:20px;padding:8px 11px;border:1px solid #ddd;border-radius:9px;background:#fff9;font-size:11px}
+</style>
+</head>
+<body>
+<header class="header">
+<h1>Ankit Kushwaha</h1>
+<p>Endpoint • Intune • Microsoft 365 • Identity • Infrastructure</p>
+</header>
+<svg id="mindmap" aria-label="Ankit Kushwaha professional endpoint engineering mind map"></svg>
+<div class="legend">🟢 Hands-on / professional focus &nbsp; • &nbsp; 🔵 Core knowledge &nbsp; • &nbsp; 🟡 Advanced / learning</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script>
+<script>
+const data={
+content:"<strong>Ankit Kushwaha</strong><br><small>Endpoint / Infrastructure Engineering</small>",
+children:[
+{content:"🟢 Microsoft Intune",children:[
+{content:"Device Management",children:["Windows MDM","Device enrollment","Device lifecycle","Device groups & assignments","Device check-in","Company Portal"].map(content=>({content}))},
+{content:"Windows Autopilot",children:["Device registration / hardware identity","Deployment profiles","Enrollment Status Page","OOBE & deployment flow","Autopilot troubleshooting","Autopilot Device Preparation concepts"].map(content=>({content}))},
+{content:"Configuration",children:["Settings Catalog","Configuration Profiles","Administrative Templates","Custom OMA-URI","Device restrictions","Browser policies"].map(content=>({content}))},
+{content:"Compliance",children:["Compliance policies","Device health","Non-compliance actions","Conditional Access integration"].map(content=>({content}))},
+{content:"Monitoring & Reporting",children:["Device inventory","Application status","Policy status","Compliance reporting","Audit / operational reporting"].map(content=>({content}))}
+]},
+{content:"🟢 Application Engineering",children:[
+{content:"Windows Applications",children:["Win32 applications","MSI / MSIX","Microsoft Store apps","Microsoft 365 Apps","Company Portal availability"].map(content=>({content}))},
+{content:"Packaging & Deployment",children:["IntuneWin packaging","Install / uninstall commands","Detection rules","Requirements","Dependencies","Supersedence","Return codes","Installation logging"].map(content=>({content}))},
+{content:"macOS Applications",children:["PKG","DMG","Shell scripts","Configuration profiles"].map(content=>({content}))},
+{content:"Practical deployment work",children:["Developer tooling","JDK / Node.js","Docker Desktop","JetBrains tooling","SourceTree / developer utilities","Company Portal offline / MSIX deployment concepts"].map(content=>({content}))}
+]},
+{content:"🟢 Microsoft Entra ID & Identity",children:[
+{content:"Identity Management",children:["Users","Security groups","Dynamic groups","Device identity","Administrative roles / RBAC"].map(content=>({content}))},
+{content:"Authentication",children:["MFA","Passwordless authentication","Passkeys","Authentication methods","Phishing-resistant authentication concepts"].map(content=>({content}))},
+{content:"Conditional Access",children:["MFA requirements","Compliant device controls","Managed vs unmanaged devices","Device filters","Session controls","Authentication strength","Report-only / pilot deployment"].map(content=>({content}))},
+{content:"Identity security investigations",children:["Sign-in log analysis","Suspicious authentication review","ROPC / legacy authentication concepts","Session revocation and response"].map(content=>({content}))}
+]},
+{content:"🟢 Endpoint Security",children:[
+{content:"Intune Endpoint Security",children:["Security baselines","Endpoint security policies","Firewall","Disk encryption / BitLocker","Account protection","Windows LAPS","Attack Surface Reduction concepts"].map(content=>({content}))},
+{content:"Device Compliance",children:["Security posture","Encryption state","Secure Boot / TPM concepts","Conditional Access enforcement"].map(content=>({content}))},
+{content:"Third-party endpoint security",children:["Sophos MDR environments","Intune + endpoint security coordination"].map(content=>({content}))},
+{content:"Security architecture",children:["Zero Trust concepts","Least privilege","Identity + device security","Security incident response concepts"].map(content=>({content}))}
+]},
+{content:"🟢 Apple & Mobile Management",children:[
+{content:"Apple",children:["Apple Business Manager","Automated Device Enrollment","APNs","macOS","iOS / iPadOS","Configuration profiles / MobileConfig","PKG / DMG deployment","FileVault concepts","Platform SSO concepts"].map(content=>({content}))},
+{content:"Android Enterprise",children:["Corporate-owned devices","Personally-owned / BYOD","Work Profile","Managed applications"].map(content=>({content}))},
+{content:"MAM / App Protection",children:["iOS / Android app protection","Data transfer controls","App PIN / access controls","Selective wipe concepts","Managed vs personal data"].map(content=>({content}))}
+]},
+{content:"🟢 PowerShell & Automation",children:[
+{content:"PowerShell",children:["Application deployment","Detection scripts","Remediation scripts","Windows administration","Logging","Device configuration"].map(content=>({content}))},
+{content:"Shell scripting",children:["Bash","Zsh","macOS administration","Intune script deployment"].map(content=>({content}))},
+{content:"Microsoft Graph",children:["Graph API concepts","Intune automation concepts","Bulk administration","Reporting automation"].map(content=>({content}))},
+{content:"GitHub",children:["Reusable administration scripts","Documentation","Portfolio projects"].map(content=>({content}))}
+]},
+{content:"🟢 Microsoft 365 Administration",children:[
+{content:"Microsoft 365",children:["Tenant administration","Identity integration","Security administration"].map(content=>({content}))},
+{content:"Exchange Online",children:["Mail flow rules","SPF","DKIM","DMARC","Anti-spoofing concepts","Transport rules","External mail controls"].map(content=>({content}))},
+{content:"SharePoint Online"},{content:"OneDrive"},{content:"Microsoft Teams"},{content:"Microsoft security ecosystem"}
+]},
+{content:"🟢 Windows & Infrastructure",children:[
+{content:"Windows",children:["Windows 10 / 11","Windows administration","Endpoint troubleshooting","Local administration"].map(content=>({content}))},
+{content:"Windows Server"},{content:"Linux",children:["Ubuntu","Linux administration","Entra SSO concepts"].map(content=>({content}))},
+{content:"SCCM / Configuration Manager",children:["Traditional endpoint management","Co-management concepts","Migration toward Intune"].map(content=>({content}))},
+{content:"IT Support & Infrastructure",children:["Endpoint support","Infrastructure operations","Network / security fundamentals"].map(content=>({content}))}
+]},
+{content:"🟢 Governance & Operations",children:[
+{content:"RBAC & Administration",children:["Least privilege","Scope tags","Administrative Units","Role-based access"].map(content=>({content}))},
+{content:"Policy Governance",children:["Naming conventions","Assignment strategy","Pilot → Test → Production","Policy lifecycle","Change management"].map(content=>({content}))},
+{content:"Device Lifecycle",children:["Onboarding","Enrollment","Configuration","Application deployment","Monitoring","Retirement / wipe","Offboarding"].map(content=>({content}))},
+{content:"Troubleshooting Method",children:["Symptom → evidence → root cause → resolution","Intune Management Extension logs","MDM diagnostics","Company Portal logs","Event Viewer","dsregcmd","gpresult","Sign-in / audit logs"].map(content=>({content}))}
+]},
+{content:"🔵 Professional Portfolio",children:[
+{content:"GitHub",children:[
+{content:'<a href="https://github.com/AnkitKushwahaIT">Profile</a>'},
+{content:'<a href="https://github.com/AnkitKushwahaIT/ADuser">ADuser</a> — Active Directory PowerShell tooling'},
+{content:'<a href="https://github.com/AnkitKushwahaIT/linux-entra-sso">linux-entra-sso</a> — Linux / Entra SSO project'},
+{content:'<a href="https://github.com/AnkitKushwahaIT/Intunewin_Create_Extract">Intunewin_Create_Extract</a> — IntuneWin packaging tooling'}
+]},
+{content:"Documentation",children:["Intune SOPs","Onboarding / offboarding","Application deployment guides","Security configuration guides","Troubleshooting runbooks"].map(content=>({content}))},
+{content:"Public portfolio principle",children:["Document techniques and reusable patterns","Remove tenant / user / client confidential data","Separate hands-on experience from learning topics"].map(content=>({content}))}
+]},
+{content:"🟡 Advanced / Learning Direction",children:["Advanced Microsoft Graph automation","Endpoint engineering at scale","Advanced reporting / Power BI","Azure automation concepts","GitHub Actions / CI for administration tooling","Infrastructure-as-Code concepts","AI infrastructure / future workload engineering"].map(content=>({content}))},
+{content:"🔵 Career Focus",children:["Endpoint Engineer","Intune Engineer","Microsoft 365 Administrator","Identity / Access Administration","Infrastructure Engineer","Security-focused Endpoint Engineering"].map(content=>({content}))}
+]};
+
+const mm=markmap.Markmap.create("#mindmap",
+markmap.deriveOptions({colorFreezeLevel:2,initialExpandLevel:2,maxWidth:320}),data);
+const toolbar=new markmap.Toolbar();toolbar.attach(mm);
+const controls=toolbar.render();controls.style="position:fixed;bottom:18px;right:20px";
+document.body.append(controls);
+window.addEventListener("resize",()=>mm.fit());
+</script>
+</body>
+</html>
